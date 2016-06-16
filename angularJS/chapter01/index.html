@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+	<meta charset="UTF-8">
+	<title>start Angular</title>
+</head>
+<body>
+	<h1>
+	<!-- angular 在html中使用表达式，1-双大括号方式， 2- -->
+		表达式中包含字符：hello {{'world'}}
+	</h1>
+	<!-- 表达式中包含运算符操作 -->
+	<h2>
+		表达式中包含运算：5+5= {{5+5}}
+	</h2>
+	<!-- **************表达式的作用实际上与ng-bind指令异曲同工**************** -->
+
+	<h1>
+		<!-- ng-init 初始化变量 -->
+		<span ng-init="x=2; y=3">
+			输出 x*y= {{x*y}}
+		</span>
+	</h1>
+	<h2>
+		使用ng-bind方式：x*y= <span ng-bind="x*y"></span>
+	</h2>
+	<script src="../angular.min.js"></script>
+</body>
+</html>
