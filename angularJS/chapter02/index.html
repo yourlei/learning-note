@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+	<meta charset="UTF-8">
+	<title>data model</title>
+</head>
+<body>
+	<!-- your name: <input type="text" ng-model='data'>
+	<hr>
+	hello {{data}} -->
+	<!-- 数据模型的双向绑定 -->
+
+	<!-- <div ng-controller="binddata"> -->
+		<!-- <h2>hello,{{name.first}}</h2> -->
+	<!-- </div> -->
+		<div ng-controller="mycontrol">
+			<h1>姓名: {{person.name}}</h1>
+			<h1>性别: {{person.sex}}</h1>
+			<h1>年龄: {{person.age}}</h1>
+			<h1>体重：{{person.weight}}</h1>
+			<h1>住址：{{person.city}}</h1>	
+		</div>
+	<!-- <script src="../angular-1.3.0.js"></script> -->
+	<script src="../angular.min.js"></script>
+	<script src="./main.js"></script>
+	<!-- 高版本的angular中control的定义更加严格，不能以function的形式声明 -->
+</body>
+</html>

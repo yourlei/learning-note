@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" ng-app='app'>
+<head>
+	<meta charset="UTF-8">
+	<title>mvc model</title>
+</head>
+<body>
+  <div ng-controller='contro-1'>
+  	<h1>
+  		<span ng-bind='greet.text'></span>, angular
+  	</h1>
+  	<h1>局部属性：<span ng-bind='private'></span></h1>
+  	<h1>访问根作用域： <span ng-bind='commonEle.text'></span></h1>
+  	<button  ng-click='test()'>scope 1</button>
+  </div>
+  <div ng-controller='contro-2'>
+  	<h1> 
+  		<span ng-bind='greet.text'></span>, angular
+  	</h1>
+
+  	<h1>局部属性：<span ng-bind='private'></span></h1>
+  	<h1>访问根作用域： <span ng-bind='commonEle.text'></span></h1>
+  	<button ng-click='test()'>scope 2</button>
+  </div>
+
+  <div ng-controller='eventController'>
+		<hr>
+		rootScope
+		count: <span ng-bind='count'></span>
+
+		<div ng-controller='eventController'>
+			<button ng-click='$emit("myevent")'>$emit()</button>
+			<button ng-click='$broadcast("myevent")'>$broadcast()</button>
+			<br>
+			middle scope
+			count: <span ng-bind='count'></span>
+
+			<div ng-controller='eventController'>
+				bottom scope
+				count: <span ng-bind='count'></span>
+			</div>
+		</div>
+  </div>
+	<script src="../angular.min.js"></script>
+	<script src="./main.js"></script>
+	<!-- 
+	 - 不同controller下的$scope是相互独立的，互不影响；
+	 - $scope对象中即可定义属性，也可定义方法；
+	 - $scope 中属性、方法的引用类似js中的原型查找，会从当前scope中向根作用域查找
+	 - $emit() 向同层和上层传递
+	 - $broadcast() 向同层和下层传递
+	 -->
+</body>
+</html>
