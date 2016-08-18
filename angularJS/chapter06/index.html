@@ -3,12 +3,37 @@
 <head>
 	<meta charset="UTF-8">
 	<title>angualr ui route</title>
+	<!-- <link rel="stylesheet" href="http://apps.bdimg.com/libs/bootstrap/3.3.4/js/bootstrap.min.js" type="text/css"> -->
+	<link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css"> 
+	<script src="../libs/bootstrap/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="./stylesheets/main.css">
 </head>
 <body>
-	<div ui-view>
+	<nav class="navbar navbar-inverse none-border-radius">
+		<div class="container">
+			<ul class="menu-groups">
+				<li class="active"><a href="">Home</a></li>
+				<li><a href="">Product</a></li>
+				<li><a href="">News</a></li>
+				<li><a href="">About</a></li>
+			</ul>
+				
+		</div>
+	</nav>
+	<div class="container-fluid">
+		<div class="col-md-3 left-side-bar">
+			<ul class="groups">
+				<li class="active"><a ui-sref="./index.html">Home</a></li>
+				<li><a ui-sref="state2">Product</a></li>
+				<li><a ui-sref="state1">News</a></li>
+				<li><a ui-sref="">About</a></li>
+			</ul>
+		</div>
+		<div ui-view class="col-md-9">
+		</div>
 	</div>
-	<a ui-sref='state1'>state 1</a>
-	<a ui-sref='state2'>state2</a>
+<!-- 	<a ui-sref=''>state 1</a>
+	<a ui-sref=''>state2</a> -->
 	<!-- <a href="#/state2">state2</a> -->
 
 	<script src="../angular.min.js"></script>

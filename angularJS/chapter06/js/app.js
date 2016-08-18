@@ -1,7 +1,7 @@
 var app = angular.module('ui-router', ['ui.router']);
 
 app.config(function($stateProvider, $urlRouterProvider) {
-	$urlRouterProvider.otherwise('/state1');
+	$urlRouterProvider.otherwise('/');
 	$stateProvider.state('state1', {
 		url: '/state1', 
 		templateUrl: 'include/page1.html'
