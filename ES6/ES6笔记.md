@@ -7,7 +7,7 @@
 ES6已于2015年6月发布，当前大多数浏览器对ES6规范的支持程度还不完善，许多新的特性还未能被浏览器支持，因此使用ES6时需要将所写的代码转为ES5的语法规范，以便程序能够在各浏览器中运行。
 
 #### 使用Traceur编译器将ES6转为ES5
-1. 方式一：直接插入网页
+1.方式一：直接插入网页
 
 - 引入Traceur库文件
 
@@ -43,11 +43,11 @@ ES6已于2015年6月发布，当前大多数浏览器对ES6规范的支持程度
 	</script>
 ``` 
 
-2. 方式二：在线转换
+2.方式二：在线转换
 
 Traceur提供一个在[!线编译器](http://google.github.io/traceur-compiler/demo/repl.html)，可以在线将ES6代码转为ES5代码
 
-3. 命令行转换
+3.命令行转换
 
 实际是通过npm 安装一个插件，即前面用到的Traceur编译器，安装：
 
@@ -66,7 +66,7 @@ traceur --script es6.js --out es5.js
 traceur --script es6.js --out es5.js --experimental
 ```
 
-4. 在node.js程序中使用traceur编译器
+4.在node.js程序中使用traceur编译器
 
 ``` js
 var traceur = require('traceur');
