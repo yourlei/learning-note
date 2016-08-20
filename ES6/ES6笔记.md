@@ -2,7 +2,7 @@
  * ECMAScript入门@阮一峰
  * 2016-08-18 
 -->
-> ES6 编译为 ES5
+> 一、ES6 编译为 ES5
 
 ES6已于2015年6月发布，当前大多数浏览器对ES6规范的支持程度还不完善，许多新的特性还未能被浏览器支持，因此使用ES6时需要将所写的代码转为ES5的语法规范，以便程序能够在各浏览器中运行。
 
@@ -90,3 +90,21 @@ fs.writeFileSync('out.js', result.js);
 // sourceMap属性对应map文件
 fs.writeFileSync('out.js.map', result.sourceMap);
 ```
+
+> 二、let和const命令
+
+ES6之前声明一个变量可以使用**var**关键字，但使用*var*声明的变量并不能有效的定义变量
+的作用域，而ES6中使用**let**关键字可以实现局部变量的定义。这里的局部变量是指以代
+码块形式定义的，而非通过函数定义。如：
+
+``` js
+{
+  let a = 1;
+  var b = 2;
+}
+console.log(a); // referenceError undefine
+console.log(b); // 2
+```
+
+从输出结果可以看出*let*定义的变量在代码块外是不可见的，而*var*定义的变量则没有此
+限制。
