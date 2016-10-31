@@ -65,4 +65,3 @@ where storage_parameter is:
 - Distribution key 
 
 
-
