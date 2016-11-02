@@ -11,3 +11,9 @@ $ df -h
 ``` shell
 $ du -sh filename
 ```
+
+> 查找文件中字符
+
+``` shell
+grep -e 'targetChart' filename
+```
