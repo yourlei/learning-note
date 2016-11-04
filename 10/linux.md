@@ -17,3 +17,9 @@ $ du -sh filename
 ``` shell
 grep -e 'targetChart' filename
 ```
+
+> 查看历史记录
+ 
+ ``` shell
+ $ history # 快捷键 Ctr + r
+ ```
