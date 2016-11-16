@@ -12,3 +12,9 @@ create role $username with $password;
 ``` shell
 grant select/update/insert/delete/rule on $table to $user;
 ```
+
+> 修改表名
+
+``` shell
+alter table $tablename rename to $newtablename;
+```
