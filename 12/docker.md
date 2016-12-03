@@ -14,3 +14,57 @@ $ yum install kernel-ml-aufs kernel-ml-aufs-devel
 > 重启系统, 查看内核
 
 > uname -r
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+> docker command
+
+* run image
+
+``` shell
+$ docker run -it imageName /bin/bash
+```
+
+* list images information
+``` shell
+$ docker images
+```
+
+* list all container info
+``` shell
+docker ps -a
+```
+
+* list runing container info
+``` shell
+docker ps
+```
+
+* attach container
+``` shell
+docker attach containerID
+```
+
+* start container
+``` shell
+docker start -i containerID
+```
+
+* stop container
+``` shell
+docker stop containerID
+```
+
