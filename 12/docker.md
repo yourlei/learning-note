@@ -101,5 +101,5 @@ Create a new image from a container's changes
 
 * mount host folder to contianer
 ``` shell
-docker rum -ti -v $(pwd):/tmp centos # 挂载当前目录到container 的/tmp 下
+docker run -ti -v $(pwd):/tmp centos # 挂载当前目录到container 的/tmp 下
 ```
