@@ -7,15 +7,23 @@
 
 使用linear-gradient需要设置一个渐变的起始方向或是调度值, 另外还需设定渐变的颜色;
 
-<pre>linear-gradient(0deg, pink, orange) # 从左到右</pre>
+> -webkit-linear-gradient
 
-<pre>linear-gradient(45deg, pink, orange)</pre>
+<pre>-webkit-linear-gradient(0deg, pink, orange) # 从左到右</pre>
 
-<pre>linear-gradient(90deg, pink, orange) # 从下到上</pre>
+<pre>-webkit-linear-gradient(45deg, pink, orange)</pre>
 
-<pre>linear-gradient(180deg, pink, orange) # 从右到左</pre>
+<pre>-webkit-linear-gradient(90deg, pink, orange) # 从下到上</pre>
 
-<pre>linear-gradient(270deg, pink, orange) # 从上到下</pre>
+<pre>-webkit-linear-gradient(180deg, pink, orange) # 从右到左</pre>
 
-<pre>linear-gradient(360deg, pink, orange) # 从左到右</pre>
+> linear-gradient
+
+<pre>-webkit-linear-gradient(0deg, pink, orange) # 从下到上</pre>
+
+<pre>-webkit-linear-gradient(45deg, pink, orange)</pre>
+
+<pre>-webkit-linear-gradient(90deg, pink, orange) # 从左到右</pre>
+
+<pre>-webkit-linear-gradient(180deg, pink, orange) # 从上到下</pre>
 
