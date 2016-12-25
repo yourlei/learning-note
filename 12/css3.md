@@ -19,11 +19,12 @@
 
 > linear-gradient
 
-<pre>-webkit-linear-gradient(0deg, pink, orange) # 从下到上</pre>
+<pre>linear-gradient(0deg, pink, orange) # 从下到上</pre>
 
-<pre>-webkit-linear-gradient(45deg, pink, orange)</pre>
+<pre>linear-gradient(45deg, pink, orange)</pre>
 
-<pre>-webkit-linear-gradient(90deg, pink, orange) # 从左到右</pre>
+<pre>linear-gradient(90deg, pink, orange) # 从左到右</pre>
 
-<pre>-webkit-linear-gradient(180deg, pink, orange) # 从上到下</pre>
+<pre>linear-gradient(180deg, pink, orange) # 从上到下</pre>
 
+*w3c的linear-gradient渐变方向与各厂商的带前缀的渐变方向不同;*
