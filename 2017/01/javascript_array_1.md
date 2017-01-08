@@ -53,3 +53,40 @@ console.log(a.concat(b)); # [1, 2, 3, 'fly', 'with', 'me']
 console.log(a);           # [1, 2, 3]
 ```
 
+3. push(value): 向数组中添加一个元素, 即入栈操作, 返回入栈后的数组长度.(栈的出入栈规则是后入先出)
+``` js
+var a = [1, 2];
+var count = a.push(3);  
+
+console.log(count); # 3
+console.log(a); # [1, 2, 3]
+```
+
+4. pop(): 弹出栈顶元素, 即出栈操作, 返回值为栈顶元素.
+``` js
+var a = [];
+var count = a.push(1, 2, 3);  
+var top = a.pop(); 
+
+console.log(top); # 3
+console.log(a); # [1, 2]
+```
+
+5. shift(): 与pop() 方法相反, 返回的是栈底元素.
+``` js
+var a = [];
+var count = a.push(1, 2, 3);  
+var bottom = a.shift();  
+
+console.log(bottom); # 1
+console.log(a); # [2, 3]
+```
+
+6. unshift(value): 入栈操作, 与push不同的是unshift()将元素压入栈底, 返回值为入栈后数组的长度.
+``` js
+var a = [1, 2];
+var count = a.unshift(3);
+
+console.log(count); # 3
+console.log(a);     # [3, 1, 2]
+```
