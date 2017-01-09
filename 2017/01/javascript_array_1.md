@@ -36,7 +36,7 @@ console.log（a.length); # 14
 
 > 数组方法
 
-1. indexOf(arg): 查找与arg匹配的元素，并返回元素下标；若无匹配项则返回-1；
+1. indexOf(arg, fromindex): 查找与arg匹配的元素，fromindex指定查找的起始位置, 若省略默认从首字符开始查找.并返回元素下标；若无匹配项则返回-1；
 
 ``` js
 var a = [1, 2, 3, 'java'];
@@ -44,6 +44,8 @@ console.log(a.indexOf(3));     # 2
 console.log(a.indexOf('ja'));  # -1
 cosole.log(a.indexOf('java')); # 3
 ```
+* 与lastIndexOf()则是从后往前查找.
+
 2. concat(arr): 数组连接，将arr数组中的元素追加到另一数组中，执行后的操作不会保留在数组；
 ``` js
 var a = [1, 2, 3];
@@ -117,6 +119,48 @@ a.sort();
 
 console.log(a); # [0, 1, 2, 3]
 
-10. concat(): 
+10. toString(): 将数组转为字符串, 该方法不会修改原数组.
+``` js
+var a = [1, 2, 3];
+var b = a.toString();
+
+console.log(a); # [1, 2, 3]
+console.log(b); # "1, 2, 3"
+
+typeof b; # String
+```
+
+11. slice(start, end): 返回索引为start到end(不包括end元素), 创建一个新的数组;
+``` js
+var a = [1, 2, 3, 4];
+var b = a.slice(0, 3);
+
+console.log(a); # [1, 2, 3, 4]
+console.log(b); # [1, 2, 3];
+```
+
+12. splice(index, count): 移除从index起的count个元素, 执行后会改变原有数组.
+``` js
+var a = [1, 2, 3, 4];
+var b = a.splice(1, 2);
+
+console.log(a); # [1, 4]
+console.log(b); # [2, 3];
+```
+
+13. map(callback): 类似于for-each循环, 以数组中的元素为参数执行callback函数.
+``` js
+var a = [1, 2, 3, 4];
+
+a.map(function (value, key) {
+	console.log('a[' + key + ']' + '=' + value);
+});
+outprint: 
+	a[0]=1
+	a[1]=2
+	a[2]=3
+	a[3]=4
+```
+
 
 
