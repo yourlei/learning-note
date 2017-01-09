@@ -90,3 +90,27 @@ var count = a.unshift(3);
 console.log(count); # 3
 console.log(a);     # [3, 1, 2]
 ```
+
+7. reverse(): 数组反转函数, 执行后首尾元素互换, 返回值为反转后的数组元素.
+``` js
+var a = [1, 2, 3];
+var b = a.reverse();
+
+console.log(a); # [3, 2, 1]
+console.log(b); # [3, 2, 1]
+```
+
+8. join(symbol): 将数组以symbol为分隔符转为字符串, 执行该方法不会改变原有数组.
+``` js
+var a = ['l', 'e', 'i'];
+var b = a.join('');
+
+console.log(a); # ['l', 'e', 'i']
+console.log(b); # 'lei'
+```
+
+9. sort(): 
+
+10. concat(): 
+
+
