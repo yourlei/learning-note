@@ -109,7 +109,13 @@ console.log(a); # ['l', 'e', 'i']
 console.log(b); # 'lei'
 ```
 
-9. sort(): 
+9. sort(): 对数组进行升序排序.
+``` js
+var a = [1, 0, 3, 2];
+
+a.sort();
+
+console.log(a); # [0, 1, 2, 3]
 
 10. concat(): 
 
