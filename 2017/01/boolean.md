@@ -14,3 +14,17 @@
 ES5 中规范是这样定义：
 - 如果Type(x)是数字, Type(y)是字符串，则返回x == toNumber(y)的结果;
 - 如果Type(x)是字符串, Type(y)是数字，则返回 toNumber(x) == y的结果;
+
+2、其他类型和布尔类型之间的相等比较
+``` js
+var a = "42";
+var b = true;
+
+a == b; # false
+```
+ES5 中规范是这样定义：
+- 如果Type(x)是布尔值, 则返回toNumber(x) == y 的结果;
+- 如果Type(y)是布尔值, 则返回 x == toNumber(y)的结果;
+
+因此分析上面的代码可知, type(b)是bool值被强制转换为数字类型(b=1), 之后a与b的比
+较变成了情况1字符和数字进行比较, 此时字符会被转换为数值即a = 42, 所以a == b （42 == 1）为false.
