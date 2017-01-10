@@ -148,7 +148,7 @@ console.log(a); # [1, 4]
 console.log(b); # [2, 3];
 ```
 
-13. map(callback): 类似于for-each循环, 以数组中的元素为参数执行callback函数.
+13. map(callback): 类似于forEach循环, 以数组中的元素为参数执行callback函数.
 ``` js
 var a = [1, 2, 3, 4];
 
