@@ -74,3 +74,11 @@ var seq = [
 $.Velocity.RunSequence(seq);
 ```
 
+> 引用velocity内置动画
+
+``` shell
+$('ele').on('mouseover', function () {
+	$(this).velocity('callout.shake');
+})
+```
+
