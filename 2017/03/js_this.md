@@ -19,11 +19,9 @@ for(var i = 0; i < 10; i++)
 {
 	if(i > 5)
 	{
-		debugger();
 		foo(i);
-
 	}
 }
 
-console.log(foo.count);  // 5
+console.log(foo.count);
 ```
